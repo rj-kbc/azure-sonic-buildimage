@@ -19,7 +19,7 @@ RUN dpkg_apt() { [ -f $1 ] && { dpkg -i $1 || apt-get -y install -f; } || return
 {%- endif %}
 
 # Clean up
-RUN apt-get clean -y; apt-get autoclean -y; apt-get autoremove -y
+# RUN apt-get clean -y; apt-get autoclean -y; apt-get autoremove -y
 RUN rm -rf /debs
 
 COPY ["docker_init.sh", "start.sh", "/usr/bin/"]

@@ -1,0 +1,10 @@
+[Unit]
+Description=Initialize i2c-sensors driver.
+Before=pmon.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /usr/local/bin/device_i2c.sh
+
+[Install]
+WantedBy=multi-user.target

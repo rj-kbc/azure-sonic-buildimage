@@ -1,0 +1,4 @@
+INTERVAL=10
+DEVPATH=hwmon5=devices/platform/i2c-gpio.6/i2c-6/6-0063
+DEVNAME=hwmon5=rg_cpld
+FCFANS=hwmon5/pwm1=hwmon5/fan1_input hwmon5/pwm2=hwmon5/fan2_input hwmon5/pwm3=hwmon5/fan3_input

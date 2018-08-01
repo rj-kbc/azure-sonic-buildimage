@@ -1,0 +1,6 @@
+# This file describes the maintainers for sonic-platform-modules-rj-s6500
+# See the SONiC project governance document for more information
+
+Name = "wk"
+Email = "zhengwenkai@ruijie.com.cn"
+Mailinglist = sonicproject@googlegroups.com
