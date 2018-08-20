@@ -5,6 +5,7 @@ Before=pmon.service
 [Service]
 Type=oneshot
 ExecStart=/bin/bash /usr/local/bin/device_i2c.sh
+RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target

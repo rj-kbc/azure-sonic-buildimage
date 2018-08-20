@@ -4,3 +4,6 @@ obj-m += rg_cpld.o
 obj-m += rg-gpio-xeon.o
 obj-m += i2c-mux-pca954x.o
 obj-m += i2c-mux-pca9641.o
+obj-m += rg_fan.o
+obj-m += rg_psu.o
+obj-m += ruijie_f9500_platform.o

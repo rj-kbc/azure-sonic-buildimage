@@ -184,6 +184,7 @@ static struct attribute *cpld34_sysfs_attrs[] = {
 static struct attribute *cpld36_sysfs_attrs[] = {
     &sensor_dev_attr_sfp_presence1.dev_attr.attr,
     &sensor_dev_attr_sfp_presence2.dev_attr.attr,
+    &sensor_dev_attr_sfp_presence5.dev_attr.attr,
     &sensor_dev_attr_cpld_version.dev_attr.attr,
     NULL
 };

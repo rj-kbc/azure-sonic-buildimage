@@ -60,8 +60,10 @@ class SfpUtil(SfpUtilBase):
             presence_path = "/sys/bus/i2c/devices/1-0034/sfp_presence3"
         elif port_num >= 24 and port_num <= 31:
             presence_path = "/sys/bus/i2c/devices/1-0034/sfp_presence4"
-        elif port_num >= 32 and port_num <= 35:
+        elif port_num >= 32 and port_num <= 33:
             presence_path = "/sys/bus/i2c/devices/1-0036/sfp_presence5"
+        elif port_num >= 34 and port_num <= 35:
+            return True  
         else:
             return False
 
