@@ -4,5 +4,5 @@
 
 #To probe sensors not part of lm-sensors
 if [ -r /usr/local/bin/platform_sensors.py ]; then
-        python /usr/local/bin/platform_sensors.py
+    python /usr/local/bin/platform_sensors.py
 fi

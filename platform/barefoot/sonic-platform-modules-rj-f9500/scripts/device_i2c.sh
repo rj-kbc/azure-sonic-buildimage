@@ -19,6 +19,9 @@ fi
 /sbin/modprobe ruijie_f9500_platform
 /sbin/modprobe rg_fan
 /sbin/modprobe rg_psu
+/sbin/modprobe ipmi_msghandler
+/sbin/modprobe ipmi_devintf
+/sbin/modprobe ipmi_si
 
 ##add pca9641 first i2c-2
 echo pca9641 0x10 > /sys/bus/i2c/devices/i2c-0/new_device
@@ -43,8 +46,6 @@ echo pca9548 0x74 > /sys/bus/i2c/devices/i2c-1/new_device
 /sbin/modprobe rg_cpld
 
 # cpld
-echo rg_cpld 0x34 > /sys/bus/i2c/devices/i2c-1/new_device
-echo rg_cpld 0x36 > /sys/bus/i2c/devices/i2c-1/new_device
 echo rg_cpld 0x37 > /sys/bus/i2c/devices/i2c-2/new_device
 
 # tmp

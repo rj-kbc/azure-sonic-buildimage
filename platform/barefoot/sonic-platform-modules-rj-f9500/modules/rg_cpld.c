@@ -164,7 +164,7 @@ static SENSOR_DEVICE_ATTR(sfp_presence4, S_IRUGO | S_IWUSR, show_cpld_sysfs_valu
 /* 0x36 */
 static SENSOR_DEVICE_ATTR(sfp_presence1, S_IRUGO | S_IWUSR , show_cpld_sysfs_value, NULL, 0x41);
 static SENSOR_DEVICE_ATTR(sfp_presence2, S_IRUGO | S_IWUSR , show_cpld_sysfs_value, NULL, 0x42);
-static SENSOR_DEVICE_ATTR(sfp_presence5, S_IRUGO | S_IWUSR, show_cpld_sysfs_value, NULL, 0x43);
+static SENSOR_DEVICE_ATTR(sfp_presence5, S_IRUGO | S_IWUSR, show_cpld_sysfs_value, NULL, 0x4f);
 
 static struct attribute *cpld37_sysfs_attrs[] = {
     &sensor_dev_attr_fan_present.dev_attr.attr,
